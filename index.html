@@ -7,13 +7,13 @@
 </head>
 <body>
     <div class="calculator_container">
-        <label for="operands"></label>
-        <input type="text" id="operands_text_box" name="operands" value="0">
+        <label for="operands">6-digits only</label><br>
+        <input type="text" id="operands_text_box" name="operands" value="0" maxlength="6" readonly>
         <div class="operators">
-            <button id="division" class="op-btn" aria-label="A division button">/</button>
-            <button id="multiplication" class="op-btn" aria-label="A multiplication button">*</button>
-            <button id="subtraction" class="op-btn" aria-label="A subtraction button">-</button>
-            <button id="addition" class="op-btn" aria-label="An addition button">+</button>
+            <button id="division" class="calc-btn" aria-label="A division button">/</button>
+            <button id="multiplication" class="calc-btn" aria-label="A multiplication button">*</button>
+            <button id="subtraction" class="calc-btn" aria-label="A subtraction button">-</button>
+            <button id="addition" class="calc-btn" aria-label="An addition button">+</button>
         </div>
         <div class="controls">
             <button id="reset" class="op-btn" aria-label="A reset button">AC</button>
@@ -33,5 +33,6 @@
             <button id="zero" class="number-btn" aria-label="A number zero button">0</button>
         </div>
     </div>  
+    <script src="./script.js"></script>
 </body>
 </html>
